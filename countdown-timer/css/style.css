@@ -1,0 +1,144 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --red: rgb(230, 67, 77);
+    --light-red: rgb(251, 224, 226);
+    --dark-red: rgb(220, 45, 67);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--red);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.timer {
+    background-color: var(--red);
+    max-width: 1050px;
+    max-height: 290px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 #888888;
+}
+
+.box-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 20px;
+    position: relative;
+}
+
+.hours::after {
+    content: 'HOURS';
+}
+
+.minutes::after {
+    content: 'MINS';
+}
+
+.seconds::after {
+    content: 'SECS';
+}
+
+.hours::after, .minutes::after, .seconds::after {
+    color: var(--white);
+    position: absolute;
+    bottom: -35px;
+    width: 100px;
+    left: calc(50% - 50px);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.separator > p {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.box {
+    background-color: var(--dark-red);
+    height: 182px;
+    width: 120px;
+    margin: auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box > span {
+    color: var(--white);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1001px) {
+    .box > span {
+        font-size: 10rem;
+    }
+    .box-group {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        width: 70%;
+        text-align: center;
+        /*display: none;*/
+    }
+    .timer {
+        flex-flow: column wrap;
+        max-width: 100%;
+        max-height: 90%;
+    }
+    .hours {
+        margin-top: 20px;
+    }
+    .seconds {
+        margin-bottom: 60px;
+    }
+    .box {
+        width: 20vw;
+        height: 15vh;
+    }
+    .box > span {
+        font-size: 3rem;
+    }
+    .hours::after, .minutes::after, .seconds::after {
+        bottom: -40px;
+    }
+    .separator {
+        opacity: 0;
+        /*margin-top: 2rem;*/
+    }
+    .separator > p {
+        transform: rotate(90deg);
+    }
+}
