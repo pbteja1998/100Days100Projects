@@ -1,0 +1,232 @@
+:root {
+    --grey: rgb(232, 232, 232);
+    --white: rgb(255, 255, 255);
+    --blue: rgb(0, 113, 197);
+    --green: rgb(115, 206, 140);
+    --switch-height: 24px;
+    --slider-height: 20px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    height: 610px;
+    background-color: var(--white);
+    -webkit-box-shadow: 6px 6px 13px 3px rgba(173,173,173,0.68);
+    -moz-box-shadow: 6px 6px 13px 3px rgba(173,173,173,0.68);
+    box-shadow: 6px 6px 13px 3px rgba(173,173,173,0.68);
+}
+
+.title {
+    height: 45px;
+    line-height: 45px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 35px 30px;
+}
+
+.heading {
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.description {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.result-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    height: 55px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.result {
+    /*align-self: flex-end;*/
+    /*margin-bottom: 20px;*/
+    font-size: 18px;
+    color: var(--blue);
+}
+
+.result-container::after {
+    position: absolute;
+    left: 5px;
+    bottom: -20px;
+    font-size: 14px;
+}
+
+.strong::after {
+    content: 'Strong Password !';
+    color: green;
+}
+
+.medium::after {
+    content: 'Medium Password!';
+    color: orange;
+}
+
+.weak::after {
+    content: 'Weak Password!';
+    color: red;
+}
+
+.regenerate {
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.copy-btn {
+    background-color: var(--blue);
+    border-radius: 10px;
+    width: 90px;
+    height: 45px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.success {
+    background-color: green;
+    color: yellow;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+label[for=length] {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    margin-left: auto;
+}
+
+label {
+    line-height: 28px;
+}
+
+.length {
+    width: 80%;
+    margin-left: 0;
+}
+
+.length-text {
+    margin-left: auto;
+    font-size: 25px;
+}
+
+.generate {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate > p {
+    cursor: pointer;
+}
+
+.generate > p {
+    color: var(--blue) !important;
+    font-weight: bold;
+}
+
+.switch {
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: var(--switch-height);
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--slider-height);
+    width: var(--slider-height);
+    left: 2px;
+    bottom: calc(calc(var(--switch-height) - var(--slider-height))/2);
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--green);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}
+
+hr {
+    opacity: 0.5;
+}

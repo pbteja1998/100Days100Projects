@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">-->
+  <title>100 Days 100 Projects | Password Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/9ccf534938.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <h2 class="title">Password Generator</h2>
+  <div class="content">
+    <p class="heading">Generate a password</p>
+    <p class="description">Let the app generate a unique password for you. Once you're done, click the <strong>copy</strong> button</p>
+    <div id="result-container" class="result-container">
+      <span id="result" class="result"></span>
+      <div id="regenerate" class="regenerate"><i class="fa fa-repeat" aria-hidden="true"></i>
+      </div>
+      <button id="copy" class="copy-btn">Copy</button>
+    </div>
+    <div class="form">
+      <div class="form-control">
+        <label for="length">
+          Password Length
+        </label>
+        <span id="length-text" class="length-text">8</span>
+        <input id="length" type="range" min="5" max="15" step="1" class="length" value="8" />
+      </div>
+      <hr>
+      <div class="form-control">
+        <label for="lowercase">Use Lowercase Letters</label>
+        <label class="switch">
+          <input id="lowercase" type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <hr>
+      <div class="form-control">
+        <label for="uppercase">Use Uppercase Letters</label>
+        <label class="switch">
+          <input id="uppercase" type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <hr>
+      <div class="form-control">
+        <label for="numbers">Use Numbers</label>
+        <label class="switch">
+          <input id="numbers" type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <hr>
+      <div class="form-control">
+        <label for="special">Use Special Characters</label>
+        <label class="switch">
+          <input id="special" type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <hr>
+      <div id="generate" class="generate">
+        <p>Generate Password</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

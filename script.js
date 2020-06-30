@@ -2,6 +2,9 @@ const projects = [
   {
     name: 'countdown-timer',
   },
+  {
+    name: 'password-generator',
+  },
 ];
 
 const list = document.getElementById('list');
