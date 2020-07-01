@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">-->
+  <title>100 Days 100 Projects | Markdown Previewer</title>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/a11y-light.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="scripts/highlight.pack.js"></script>
+  <script src="scripts/markdown-it.min.js"></script>
+  <script src="scripts/markdown-it-ins.min.js"></script>
+  <script src="scripts/markdown-it-container.min.js"></script>
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+<div id="app" class="app">
+  <div class="header width">
+    <h1 class="title">Markdown Previewer</h1>
+  </div>
+  <div class="container width">
+    <div class="left">
+      <textarea id="markdown"></textarea>
+    </div>
+    <div class="right">
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

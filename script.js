@@ -5,6 +5,9 @@ const projects = [
   {
     name: 'password-generator',
   },
+  {
+    name: 'markdown-previewer',
+  },
 ];
 
 const list = document.getElementById('list');
