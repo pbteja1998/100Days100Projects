@@ -14,7 +14,11 @@ const projects = [
   {
     name: 'article-preview-component',
     frontendMentorChallenge: true
-  }
+  },
+  {
+    name: 'intro-component-with-signup-form',
+    frontendMentorChallenge: true
+  },
 ];
 
 const list = document.getElementById('list');
