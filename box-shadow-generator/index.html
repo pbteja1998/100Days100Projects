@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Shadow Generator</title>
+
+  <link rel="stylesheet" href="css/range-input.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="scripts/script.js"></script>
+  <script src="scripts/jscolor.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="bg">
+    <div class="form-control background-color">
+      <label for="">
+        Background
+        <input id="background-color-input" class="color-input input" value="rgba(255, 255, 255, 1)" data-jscolor="" />
+      </label>
+    </div>
+    <div class="form-control box-color">
+      <label for="">
+        Box
+        <input id="box-color-input" class="color-input input" value="rgba(255, 255, 255, 1)" data-jscolor="" />
+      </label>
+    </div>
+    <div class="form-control shadow-color">
+      <label for="">
+        Shadow
+        <input id="shadow-color-input" class="color-input input" value="rgba(0, 0, 0, 0.5)" data-jscolor="">
+      </label>
+    </div>
+  </div>
+
+  <div id="preview" class="preview">
+    <div id="box" class="box">
+      <div id="code" class="code">
+        <span id="code-text"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="settings">
+    <div class="form-control">
+      <label for="horizontal-length-input">
+        <div class="label-with-value">
+          <h2 class="label">Horizontal Length</h2>
+          <span id="horizontal-length-value" class="value"></span>
+        </div>
+        <input id="horizontal-length-input" class="input" type="range" min="-200" max="200" step="1" value="0" />
+      </label>
+    </div>
+
+    <div class="form-control">
+      <label for="vertical-length-input">
+        <div class="label-with-value">
+          <h2 class="label">Vertical Length</h2>
+          <span id="vertical-length-value" class="value"></span>
+        </div>
+        <input id="vertical-length-input" class="input" type="range" min="-200" max="200" step="1" value="10" />
+      </label>
+    </div>
+
+    <div class="form-control">
+      <label for="blur-radius-input">
+        <div class="label-with-value">
+          <h2 class="label">Blur Radius</h2>
+          <span id="blur-radius-value" class="value"></span>
+        </div>
+        <input id="blur-radius-input" class="input" type="range" min="-200" max="200" step="1" value="30" />
+      </label>
+    </div>
+
+    <div class="form-control">
+      <label for="spread-radius-input">
+        <div class="label-with-value">
+          <h2 class="label">Border Radius</h2>
+          <span id="spread-radius-value" class="value"></span>
+        </div>
+        <input id="spread-radius-input" class="input" type="range" min="-200" max="200" step="1" value="-10" />
+      </label>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

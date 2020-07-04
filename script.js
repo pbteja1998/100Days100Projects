@@ -19,6 +19,10 @@ const projects = [
     name: 'intro-component-with-signup-form',
     frontendMentorChallenge: true
   },
+  {
+    name: 'box-shadow-generator',
+    frontendMentorChallenge: false
+  },
 ];
 
 const list = document.getElementById('list');
