@@ -23,6 +23,10 @@ const projects = [
     name: 'box-shadow-generator',
     frontendMentorChallenge: false
   },
+  {
+    name: 'keyboard-event-code-detector',
+    frontendMentorChallenge: false
+  },
 ];
 
 const list = document.getElementById('list');
