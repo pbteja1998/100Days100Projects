@@ -27,6 +27,10 @@ const projects = [
     name: 'keyboard-event-code-detector',
     frontendMentorChallenge: false
   },
+  {
+    name: 'single-price-grid-component',
+    frontendMentorChallenge: true
+  },
 ];
 
 const list = document.getElementById('list');
