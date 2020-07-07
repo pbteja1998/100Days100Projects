@@ -31,6 +31,10 @@ const projects = [
     name: 'single-price-grid-component',
     frontendMentorChallenge: true
   },
+  {
+    name: 'ping-coming-soon-page',
+    frontendMentorChallenge: true
+  },
 ];
 
 const list = document.getElementById('list');
