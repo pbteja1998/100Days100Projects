@@ -35,6 +35,10 @@ const projects = [
     name: 'ping-coming-soon-page',
     frontendMentorChallenge: true
   },
+  {
+    name: 'tic-tac-toe',
+    frontendMentorChallenge: false
+  },
 ];
 
 const list = document.getElementById('list');

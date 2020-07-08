@@ -1,0 +1,101 @@
+:root {
+    --Blue1: #D6E6EA;
+    --Blue2: #4A6884;
+
+    /* X */
+    --Blue3: #3A98D4;
+
+    /* O */
+    --Blue4: #79CADC;
+
+    --Blue5: #91A2AB;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*font-family: 'Concert One', cursive;*/
+    font-family: 'Lato', sans-serif;
+}
+
+.text-Blue1 {
+    color: var(--Blue1);
+}
+
+.text-Blue2 {
+    color: var(--Blue2);
+}
+
+.text-Blue3 {
+    color: var(--Blue3);
+}
+
+.text-Blue4 {
+    color: var(--Blue4);
+}
+
+.text-Blue5 {
+    color: var(--Blue5);
+}
+
+.text-7xl {
+    font-size: 6rem;
+}
+
+.custom-box-shadow {
+    box-shadow: rgb(121, 202, 220) 0px 10px 30px -10px;
+}
+
+.box {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    /*padding: 2rem*/
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.pos-0 {
+}
+
+.pos-1 {
+}
+
+.pos-2 {
+    border-right: 0;
+}
+
+.pos-3 {
+    border-left: 0;
+}
+
+.pos-4 {
+}
+
+.pos-5 {
+    border-right: 0;
+}
+
+.pos-6 {
+    border-bottom: 0;
+}
+
+.pos-7 {
+    border-bottom: 0;
+}
+
+.pos-8 {
+    border-right: 0;
+    border-bottom: 0;
+}

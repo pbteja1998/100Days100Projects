@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+
+  <title>Tic Tac Toe</title>
+  <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container mx-auto flex justify-center items-center w-full h-full">
+
+    <div id="choice" class="py-64 text-center">
+      <h2 class="text-5xl text-Blue2 font-bold">Which one you always choose?</h2>
+      <div class="flex justify-center items-center">
+        <h2 class="text-Blue4 text-7xl mx-5 cursor-pointer" onclick="choosePlayer('O')">O</h2>
+        <P class="text-Blue5 text-3xl">or</P>
+        <h2 class="text-Blue3 text-7xl mx-5 cursor-pointer" onclick="choosePlayer('X')">X</h2>
+      </div>
+    </div>
+
+    <div id="game" class="hidden px-16 py-16 custom-box-shadow">
+      <h2 class="text-center text-3xl flex justify-center items-center">
+        <span>YOU ARE</span>
+        <span id="choice-value" class="ml-3 text-Blue4 text-4xl">O</span>
+      </h2>
+      <div class="flex">
+        <div class="text-center mx-3 text-Blue4">
+          <h2 class="text-3xl">
+            O
+          </h2>
+          <p class="text-xl">
+            <span id="o-wins"></span> wins
+          </p>
+        </div>
+
+        <div class="text-center mx-3 text-Blue3">
+          <h2 class="text-3xl">
+            X
+          </h2>
+          <p class="text-xl">
+            <span id="x-wins"></span> wins
+          </p>
+        </div>
+
+        <div class="text-center mx-3 text-Blue5">
+          <h2 class="text-3xl">
+            -
+          </h2>
+          <p class="text-xl">
+            <span id="draws"></span> draws
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col text-4xl items-center my-10 border-red-900">
+        <div class="flex">
+          <p id="box-0" class="box pos-0"></p>
+          <p id="box-1" class="box pos-1"></p>
+          <p id="box-2" class="box pos-2"></p>
+        </div>
+        <div class="flex">
+          <p id="box-3" class="box pos-3"></p>
+          <p id="box-4" class="box pos-4"></p>
+          <p id="box-5" class="box pos-5"></p>
+        </div>
+        <div class="flex">
+          <p id="box-6" class="box pos-6"></p>
+          <p id="box-7" class="box pos-7"></p>
+          <p id="box-8" class="box pos-8"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
