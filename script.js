@@ -39,6 +39,10 @@ const projects = [
     name: 'tic-tac-toe',
     frontendMentorChallenge: false
   },
+  {
+    name: 'twitter-profile',
+    frontendMentorChallenge: false
+  },
 ];
 
 const list = document.getElementById('list');
