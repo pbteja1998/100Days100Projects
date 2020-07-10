@@ -1,53 +1,69 @@
 const projects = [
   {
     name: 'countdown-timer',
-    frontendMentorChallenge: false
+    frontendMentorChallenge: false,
+    gif: false
   },
   {
     name: 'password-generator',
-    frontendMentorChallenge: false
+    frontendMentorChallenge: false,
+    gif: false
   },
   {
     name: 'markdown-previewer',
-    frontendMentorChallenge: false
+    frontendMentorChallenge: false,
+    gif: false
   },
   {
     name: 'article-preview-component',
-    frontendMentorChallenge: true
+    frontendMentorChallenge: true,
+    gif: false
   },
   {
     name: 'intro-component-with-signup-form',
-    frontendMentorChallenge: true
+    frontendMentorChallenge: true,
+    gif: false
   },
   {
     name: 'box-shadow-generator',
-    frontendMentorChallenge: false
+    frontendMentorChallenge: false,
+    gif: false
   },
   {
     name: 'keyboard-event-code-detector',
-    frontendMentorChallenge: false
+    frontendMentorChallenge: false,
+    gif: false
   },
   {
     name: 'single-price-grid-component',
-    frontendMentorChallenge: true
+    frontendMentorChallenge: true,
+    gif: false
   },
   {
     name: 'ping-coming-soon-page',
-    frontendMentorChallenge: true
+    frontendMentorChallenge: true,
+    gif: false
   },
   {
     name: 'tic-tac-toe',
-    frontendMentorChallenge: false
+    frontendMentorChallenge: false,
+    gif: true
   },
   {
     name: 'twitter-profile',
-    frontendMentorChallenge: false
+    frontendMentorChallenge: false,
+    gif: false,
+  },
+  {
+    name: 'hello-world-animation',
+    frontendMentorChallenge: false,
+    gif: true
   },
 ];
 
 const list = document.getElementById('list');
 
-projects.forEach(({ name, frontendMentorChallenge}, i) => {
+projects.forEach(({ name, frontendMentorChallenge, gif}, i) => {
   const listItem = document.createElement('li')
   let imgSrc
   let previewUrl
@@ -59,7 +75,11 @@ projects.forEach(({ name, frontendMentorChallenge}, i) => {
     previewUrl = `https://frontend-mentor.bhanuteja.dev/${name}/index.html`
     githubSrc = `https://github.com/pbteja1998/frontend-mentor-challenges/tree/master/${name}`
   } else {
-    imgSrc = `${name}/preview/desktop.png`
+    if (gif) {
+      imgSrc = `${name}/${name}.gif`
+    } else {
+      imgSrc = `${name}/preview/desktop.png`
+    }
     previewUrl = `${name}/index.html`
     githubSrc = `https://github.com/pbteja1998/100Days100Projects/tree/master/${name}`
   }
