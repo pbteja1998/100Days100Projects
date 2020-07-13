@@ -59,6 +59,11 @@ const projects = [
     frontendMentorChallenge: false,
     gif: true
   },
+  {
+    name: 'huddle-landing-page-with-alternating-feature-blocks',
+    frontendMentorChallenge: true,
+    gif: false
+  },
 ];
 
 const list = document.getElementById('list');
