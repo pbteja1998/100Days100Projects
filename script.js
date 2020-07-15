@@ -69,6 +69,11 @@ const projects = [
     frontendMentorChallenge: true,
     gif: false
   },
+  {
+    name: 'fylo-landing-page-with-two-column-layout',
+    frontendMentorChallenge: true,
+    gif: false
+  },
 ];
 
 const list = document.getElementById('list');
