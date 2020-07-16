@@ -74,6 +74,11 @@ const projects = [
     frontendMentorChallenge: true,
     gif: false
   },
+  {
+    name: 'social-media-dashboard-with-theme-switcher',
+    frontendMentorChallenge: true,
+    gif: false
+  },
 ];
 
 const list = document.getElementById('list');
