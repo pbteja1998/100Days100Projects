@@ -79,6 +79,11 @@ const projects = [
     frontendMentorChallenge: true,
     gif: false
   },
+  {
+    name: 'insure-landing-page',
+    frontendMentorChallenge: true,
+    gif: false
+  },
 ];
 
 const list = document.getElementById('list');
