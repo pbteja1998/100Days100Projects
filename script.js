@@ -84,6 +84,11 @@ const projects = [
     frontendMentorChallenge: true,
     gif: false
   },
+  {
+    name: 'pricing-component-with-toggle',
+    frontendMentorChallenge: true,
+    gif: false
+  },
 ];
 
 const list = document.getElementById('list');
