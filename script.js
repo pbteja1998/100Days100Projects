@@ -89,6 +89,11 @@ const projects = [
     frontendMentorChallenge: true,
     gif: false
   },
+  {
+    name: 'project-tracking-intro-component',
+    frontendMentorChallenge: true,
+    gif: false
+  },
 ];
 
 const list = document.getElementById('list');
