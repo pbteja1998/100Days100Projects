@@ -122,7 +122,7 @@ projects.forEach(({ name, frontendMentorChallenge, gif }, i) => {
   }
 
   listItem.innerHTML = `
-      <a href="${previewUrl}">
+      <a href="${previewUrl}" target="_blank" rel="noopener noreferrer">
         <img src="${imgSrc}" alt="${name}" />
         <p>${i + 1}. ${formatProjectName(name)}</p>
       </a>
